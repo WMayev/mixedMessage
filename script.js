@@ -7,4 +7,7 @@ function generateRandomMessage() {
   const randomExerciseTime = exerciseTime[Math.floor(Math.random() * exerciseTime.length)];
   const randomResults = results[Math.floor(Math.random() * results.length)];
   
+  return `Do the ${randomExercise} for ${randomExerciseTime} minutes to have ${randomResults}`;
 }
+
+console.log(generateRandomMessage());
